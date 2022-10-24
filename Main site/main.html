@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<!-- We use "ctrl" + "/" to create comments -->
+<!-- Tells  the browser to read the file as HTML -->
+<html>
+    <!-- contains details about the HTML file
+    which is not visible in the browser -->
+    <head>
+        <!-- specifies the encoding of the browser 
+            "utf-8" is common character encoding for www.
+        -->
+        <meta charset="utf-8">
+        <!-- allow us to have responsive web page 
+            can be viewes different devices-->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>PD Documentation Archiever | Group 5 Software Design</title>
+        <!-- Google Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Roboto&display=swap" rel="stylesheet">
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+        <!-- external css -->
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <!-- contains the actual content of the HTML
+    file that are visible in the web browser. -->
+    <body>
+        <!-- navBar -->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
+            <a class="navbar-brand" href="#">PD Documentation Archiever</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                  <a class="nav-link active" aria-current="page" href="#">Home</a>
+                  <a class="nav-link" href="#">Features</a>
+                  <a class="nav-link" href="#">Pricing</a>
+                  <a class="nav-link disabled">Disabled</a>
+                </div>
+              </div>
+        </nav>
+        <!-- End of NavBar -->
+        <!-- create a container for our layout -->  
+        <div class="container-fluid">
+            <!-- Start of landing -->
+            <section class="jumbotron text-center my-1" id="search">
+                <h1>PD Document Archiever</h1>
+                <h4>Computer Engineering department</h4>
+                <div class="container-fluid col-6">
+                    <!-- Search -->
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form>
+                </div>
+                <!-- <p>Hi! My name is Zo and I like to learn different things</p> -->
+                <!-- Image -->
+                <!-- <img src="pdarch/template/images/avatar.PNG"  class="img-fluid rounded-circle" /> -->
+            </section>
+            <!-- End of landing -->
+            <!-- Grid Placement -->
+            <section class="p-1  my-1" id="content">
+                <div class=" px-1 container">
+                    <div class="row justify-content-around">
+                        <div class="p-3 border col-3 bg-light">
+                            <!-- Table of content -->
+                            <div id="simple-list-example" class="d-flex flex-column gap-2 simple-list-example-scrollspy text-left">
+                                <a class="p-1 rounded" href="#simple-list-item-1">Biomedicine</a>
+                                <a class="p-1 rounded" href="#simple-list-item-2">Business and Management</a>
+                                <a class="p-1 rounded" href="#simple-list-item-3">Chemistry</a>
+                                <a class="p-1 rounded" href="#simple-list-item-4">Earth Science</a>
+                                <a class="p-1 rounded" href="#simple-list-item-5">Economics</a>
+                                <a class="p-1 rounded" href="#simple-list-item-6">Education</a>
+                                <a class="p-1 rounded" href="#simple-list-item-7">Environment</a>
+                                <a class="p-1 rounded" href="#simple-list-item-8">Geography</a>
+                                <a class="p-1 rounded" href="#simple-list-item-9">Mathematics</a>
+                                <a class="p-1 rounded" href="#simple-list-item-10">Physics</a>
+                            </div>
+                        </div>
+                        <div class="p-3 border col-8 bg-light">
+                            <!-- list of researches -->
+                            <div data-bs-spy="scroll" data-bs-target="#navbar-example3" data-bs-smooth-scroll="true" class="scrollspy-example-2" tabindex="0">
+                                <div class="list-group">
+                                    <a href="#" class="list-group-item list-group-item-action" >
+                                    <div class="d-flex w-100 justify-content-between">
+                                        <h5 class="mb-1">List group item heading</h5>
+                                        <small>3 days ago</small>
+                                    </div>
+                                    <p class="mb-1">Some placeholder content in a paragraph.</p>
+                                    <small>And some small print.</small>
+                                    </a>
+                                    <a href="#" class="list-group-item list-group-item-action">
+                                    <div class="d-flex w-100 justify-content-between">
+                                        <h5 class="mb-1">List group item heading</h5>
+                                        <small class="text-muted">3 days ago</small>
+                                    </div>
+                                    <p class="mb-1">Some placeholder content in a paragraph.</p>
+                                    <small class="text-muted">And some muted small print.</small>
+                                    </a>
+                                    <a href="#" class="list-group-item list-group-item-action">
+                                    <div class="d-flex w-100 justify-content-between">
+                                        <h5 class="mb-1">List group item heading</h5>
+                                        <small class="text-muted">3 days ago</small>
+                                    </div>
+                                    <p class="mb-1">Some placeholder content in a paragraph.</p>
+                                    <small class="text-muted">And some muted small print.</small>
+                                    </a>
+                                    <a href="#" class="list-group-item list-group-item-action" >
+                                    <div class="d-flex w-100 justify-content-between">
+                                        <h5 class="mb-1">List group item heading</h5>
+                                        <small>3 days ago</small>
+                                    </div>
+                                        <p class="mb-1">Some placeholder content in a paragraph.</p>
+                                        <small>And some small print.</small>
+                                    </a>
+                                    <a href="#" class="list-group-item list-group-item-action">
+                                    <div class="d-flex w-100 justify-content-between">
+                                        <h5 class="mb-1">List group item heading</h5>
+                                        <small class="text-muted">3 days ago</small>
+                                    </div>
+                                        <p class="mb-1">Some placeholder content in a paragraph.</p>
+                                        <small class="text-muted">And some muted small print.</small>
+                                    </a>
+                                    <a href="#" class="list-group-item list-group-item-action">
+                                    <div class="d-flex w-100 justify-content-between">
+                                        <h5 class="mb-1">List group item heading</h5>
+                                        <small class="text-muted">3 days ago</small>
+                                    </div>
+                                        <p class="mb-1">Some placeholder content in a paragraph.</p>
+                                        <small class="text-muted">And some muted small print.</small>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Grid Placement -->
+            <!-- Start of Equation -->
+            <section id="equation" class="text-center my-1">
+                <!-- Add function (test) -->
+                <form action="add">
+                    <!-- input variables -->
+                    <p>Enter 1st number: <input type="text" name="num1"><br></p>
+                    <p>Enter 2nd Number: <input type="text" name="num2"><br></p>
+                    <!-- submit button -->
+                    <input type="submit">
+                    <!-- input result -->
+                    <h4>Result : {{result}}</h4>
+
+                </form>
+            </section>
+            <!-- End of Equation -->
+        </div>
+        <!-- end of container for our layout -->
+        <!-- Bootstrap JavaScript Bundle with Popper -->
+        <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+
+    </body>
+
+</html>

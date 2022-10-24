@@ -1,0 +1,45 @@
+h3{
+  font-family: Arial; 
+  font-size: 15pt;         
+  font-style: normal; 
+  font-weight: bold; 
+  color:white; 
+  background-color:#002E94;
+}
+h1{
+  font-family: Now Bold; 
+  font-size: 25pt;         
+  font-style: normal; 
+  font-weight: bold; 
+  color:black; 
+
+}
+body  
+{  
+    margin: 0;  
+    padding:0;  
+    background-color:yellow;  
+    font-family: 'Arial';  
+}
+
+table{
+  font-family: Arial; 
+  color:black; 
+  font-size: 12pt; 
+  font-style: normal;
+  font-weight: bold;
+  text-align:0; 
+  background-color: white; 
+  border-collapse: collapse; 
+  border: 6px solid navy
+
+}
+button {
+  background-color: #002E94;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
